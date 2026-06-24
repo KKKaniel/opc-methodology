@@ -9,6 +9,7 @@ title = "一人企业方法论"
 additional-css = ["theme/css/custom.css"]
 git-repository-url = "https://github.com/KKKaniel/opc-methodology"
 no-section-label = false
+site-url = "/opc-methodology/"
 
 [output.epub]
 optional = true
