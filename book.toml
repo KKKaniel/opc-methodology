@@ -5,5 +5,8 @@ multilingual = false
 src = "src"
 title = "一人企业方法论"
 
+[output.html]
+
 [output.epub]
+optional = true
 cover-image = "src/images/opb-book-cover-2.1.jpg"
