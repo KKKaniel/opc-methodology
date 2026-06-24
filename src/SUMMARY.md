@@ -1,5 +1,7 @@
 # 目录
-1.  [README](./README.md)
+
+[一人企业方法论](./README.md)
+
 1.  [定义一人企业](./chapter-define-opb.md)
     1.  [新版方法论概述](./opb-methodology-new-version-and-author.md)
     1.  [一人企业的定义](./define-opb.md)
@@ -13,13 +15,13 @@
     1.  [竞争策略:结构化优势](./structured-advantage.md)
     1.  [思考工具:《一人企业画布》和《一人企业月报》](./opb-canvas-and-opb-report.md)
 3.  [构建一人业务](./chapter-build-opb.md)
-    1.   [一人企业≠一人业务](./one-person-enterprise-does-not-equal-one-person-business.md)
+    1.  [一人企业≠一人业务](./one-person-enterprise-does-not-equal-one-person-business.md)
     1.  [优势发现:副产品优势](./discovery-of-by-product-advantages.md)
     1.  [风险评控:从副业开始](./start-from-side-project.md)
     1.  [风险评控:管理和利用不确定性](./managing-and-utilizing-uncertaint.md)
     1.  [产品构建:从零构建软件产品或服务](./building-software-products-or-services-from-scratch.md)
-4. [基础设施及搭建](./chapter-build-infrastructure.md)
-    1.   [理想的一人企业基础设施](./what-is-the-ideal-one-person-business-infrastructure.md)
+4.  [基础设施及搭建](./chapter-build-infrastructure.md)
+    1.  [理想的一人企业基础设施](./what-is-the-ideal-one-person-business-infrastructure.md)
     1.  [用户池和触达能力](./infrastructure-user-pool-reach-capability.md)
     1.  [内容池和自动化能力](./content-pool-and-automation-capability.md)
     1.  [产品池和支付能力](./product-pool-and-payment-capability.md)
