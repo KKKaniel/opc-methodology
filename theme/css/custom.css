@@ -1,0 +1,273 @@
+/* ===== OPC Methodology - Custom Theme ===== */
+
+:root {
+  --opc-primary: #1a6b3c;
+  --opc-primary-light: #2d9e5f;
+  --opc-primary-dark: #0f4526;
+  --opc-accent: #f4a623;
+  --opc-bg: #f7f9f7;
+  --opc-card-bg: #ffffff;
+  --opc-text: #1a1a2e;
+  --opc-text-muted: #6b7280;
+  --opc-border: #e2e8e4;
+  --opc-radius: 12px;
+  --opc-shadow: 0 2px 12px rgba(26,107,60,0.08);
+}
+
+/* ===== 全局字体与背景 ===== */
+body {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif !important;
+  background-color: var(--opc-bg) !important;
+  color: var(--opc-text) !important;
+}
+
+.content main {
+  max-width: 900px;
+}
+
+/* ===== 侧边栏 ===== */
+.sidebar {
+  background: linear-gradient(180deg, #0f4526 0%, #1a6b3c 100%) !important;
+}
+
+.sidebar .sidebar-scrollbox {
+  padding: 16px 0 !important;
+}
+
+.sidebar a {
+  color: #c8e6d4 !important;
+  font-size: 14px !important;
+  padding: 4px 16px !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #ffffff !important;
+  background: rgba(255,255,255,0.12) !important;
+}
+
+.sidebar ol li.chapter-item.expanded > a,
+.sidebar ol li.chapter-item > a.active {
+  color: var(--opc-accent) !important;
+  font-weight: 600 !important;
+}
+
+/* 一级目录加粗 */
+.sidebar ol > li > a {
+  font-weight: 600 !important;
+  font-size: 13.5px !important;
+  color: #e8f5ee !important;
+  margin-top: 4px !important;
+}
+
+/* 二级目录缩进 */
+.sidebar ol ol > li > a {
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  padding-left: 28px !important;
+  color: #a8d5bc !important;
+}
+
+/* 侧边栏标题 */
+.sidebar-title {
+  color: var(--opc-accent) !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  padding: 12px 16px 8px !important;
+  letter-spacing: 1px !important;
+  border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+  margin-bottom: 8px !important;
+}
+
+/* ===== 顶部导航栏 ===== */
+.menu-bar {
+  background: var(--opc-primary-dark) !important;
+  border-bottom: 2px solid var(--opc-accent) !important;
+}
+
+.menu-bar .menu-bar-sticky-container {
+  background: var(--opc-primary-dark) !important;
+}
+
+.menu-title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.icon-button {
+  color: #c8e6d4 !important;
+}
+
+/* ===== 主页 2x2 卡片网格 ===== */
+.opc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.opc-card {
+  background: var(--opc-card-bg);
+  border: 1px solid var(--opc-border);
+  border-radius: var(--opc-radius);
+  padding: 28px 24px 24px;
+  box-shadow: var(--opc-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.opc-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--opc-primary), var(--opc-accent));
+}
+
+.opc-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(26,107,60,0.15);
+}
+
+.opc-card-icon {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.opc-card-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--opc-primary-light);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.opc-card-title {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: var(--opc-primary-dark) !important;
+  margin: 0 0 12px 0 !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.opc-card-desc {
+  font-size: 13.5px;
+  color: var(--opc-text-muted);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.opc-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.opc-card-list li {
+  font-size: 13px;
+  color: var(--opc-text);
+  padding: 4px 0 4px 18px;
+  position: relative;
+  border-bottom: 1px dashed var(--opc-border);
+}
+
+.opc-card-list li:last-child {
+  border-bottom: none;
+}
+
+.opc-card-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--opc-primary-light);
+  font-size: 11px;
+}
+
+.opc-card-btn {
+  display: inline-block;
+  background: var(--opc-primary);
+  color: #ffffff !important;
+  padding: 7px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background 0.2s ease;
+}
+
+.opc-card-btn:hover {
+  background: var(--opc-primary-light) !important;
+  color: #ffffff !important;
+}
+
+/* ===== 页脚说明 ===== */
+.opc-footer-note {
+  background: #f0f7f3;
+  border-left: 4px solid var(--opc-primary);
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  font-size: 13px;
+  color: var(--opc-text-muted);
+  margin-top: 16px;
+}
+
+.opc-footer-note a {
+  color: var(--opc-primary) !important;
+}
+
+/* ===== 正文内容样式 ===== */
+.content h1 {
+  color: var(--opc-primary-dark);
+  border-bottom: 2px solid var(--opc-primary);
+  padding-bottom: 10px;
+}
+
+.content h2 {
+  color: var(--opc-primary);
+  border-left: 4px solid var(--opc-accent);
+  padding-left: 12px;
+  margin-top: 32px;
+}
+
+.content h3 {
+  color: var(--opc-primary);
+}
+
+.content a {
+  color: var(--opc-primary-light) !important;
+}
+
+.content a:hover {
+  color: var(--opc-accent) !important;
+}
+
+.content blockquote {
+  background: #f0f7f3;
+  border-left: 4px solid var(--opc-primary);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  color: var(--opc-text-muted);
+}
+
+.content code {
+  background: #eef6f1;
+  color: var(--opc-primary-dark);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 13px;
+}
+
+/* ===== 移动端适配 ===== */
+@media (max-width: 700px) {
+  .opc-grid {
+    grid-template-columns: 1fr;
+  }
+}
